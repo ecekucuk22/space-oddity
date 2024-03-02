@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+p {
+  font-size: 10px;
+}
+
+
+#hero video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position-y: center;
+}
+.video-write-content {
+  margin-left: 8%;
+  margin-top: 8%;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: start;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.video-navbar-container {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: brightness(0.4);
+  position: relative;
+}
+
+.headerContainer {
+  margin-bottom: -95px;
+}
+#spacefont {
+  font-family: "Bebas Neue", sans-serif; /*space oditty yazısının şeysi*/
+  font-size: 30px;
+  font-style: oblique;
+}
+.glitch {
+  font-size: 64px;
+  color: #dbdbdb;
+  animation: glitch 728ms infinite;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+}
+.glitch2Bedore {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5rem;
+  color: white;
+}
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+.containerGlitch {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 175px;
+  height: auto;
+}
+
+.navbarfont {
+  /**/
+  font-family: "Bebas Neue", sans-serif;
+  font-size: x-large !important;
+  font-style: normal;
+}
+.navB {
+  width: 85px;
+}
+.video-navbar-container .navbar-nav .nav-link {
+  color: white !important;
+}
+.navbar-toggler {
+  /**/
+  background-color: rgba(12, 92, 211, 0.5) !important;
+}
+/*
+#tellmemore {
+  margin: auto;
+  font-family: "Bebas Neue", sans-serif;
+  /*font-size: larger;
+  font-style: normal;
+}
+*/
+
+.tellmetext {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: xx-large;
+  font-style: normal;
+}
+.anaekranyazi {
+  position: absolute;
+  left: 3%;
+  top: 4%;
+}
+/*
+main {
+  position: relative;
+  z-index: -1;
+}
+*/
+#anaekrandisplay {
+  position: relative;
+  color: #ffffff;
+  text-shadow: 6px 6px 4px #000000 !important;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4vw;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+}
+
+#scroll {
+  /* width: 929px;
+  position: fixed;
+  top: 0px;
+  z-index: auto; */
+}
+
+/*buradan .footer olan kısma kadar ekleme yaptım*/
+/*input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+input[type=submit] {
+  width: 100%;
+  background-color: darkblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkblue;
+}
+*/
+
+/*div {
+  border-radius: 5px;
+  background-color: #f2f2f2; 
+  padding: 20px;  burda bozan birşey var
+}
+*/
+
+/*
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc; 
+  border-radius: 4px;
+  background-color: #8e3d3d;   
+  font-size: 14px;
+  resize: none;
+}
+form {
+  margin-right: 20px; 
+}
+*/
+
+/*max-width: 100px;
+img{
+     
+     width: 1000px;
+     height: 420px;
+}*/
+
+.footer {
+  position: relative;
+  /* top: 50px; */
+  width: 100%;
+  background: transparent;
+  min-height: 100px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -10% !important;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -83px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #tellmemore {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 1299px) {
+  #tellmemore {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #tellmemore {
+    font-size: 25px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("arkaplan.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+.form-box {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 20px;
+}
+h3 {
+  text-align: center;
+}
+#baslik {
+  color: #ccc;
+}
+
+.inputbox {
+  position: relative;
+  /*margin: 30px 0;*/
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: 5px;
+}
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5 px;
+  color: #fff;
+}
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+textarea {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+  color: #fff;
+}
+.forget {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.forget label input {
+  margin-right: 3px;
+}
+.forget label a {
+  color: #fff;
+  text-decoration: none;
+}
+.forget label a:hover {
+  text-decoration: underline;
+}
+.yarim-satir-bosluk {
+  margin-bottom: 5px; /* Yarım satır boşluk eklemek için birim olarak em kullanılabilir */
+}
+.buttonSend {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-top: 35px;
+}
+.register {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.register p a:hover {
+  text-decoration: underline;
+}
+.card2 {
+  display: flex;
+  gap: 20px;
+}
+#formfoto {
+  width:100px;
+  height: auto;
+  border-radius: 20px;
+}
+.img {
+  opacity: 0.4;
+}
+/*navbar-search*/
+#box {
+  max-width: 300px;
+  position: relative;
+}
+.asdf {
+  justify-content: space-between;
+}
+
+#box .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 18px;
+  font-size: 20px;
+  color: rgb(6, 6, 98);
+}
+
+#search {
+  width: 200px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  border: 2px solid rgb(2, 16, 41);
+  font-size: 18px;
+  border-radius: 40px;
+  padding: 12px 20px 12px 40px;
+  -moz-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#search:focus {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  #formfoto {
+    display: none;
+  }
+}
